@@ -1,0 +1,25 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.items {
+  list-style-type: none;
+  display: flex;
+  /*flex-direction: column;*/
+}
+
+.item {
+  z-index: 9998; /* for draggable */
+  cursor: move;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  flex: 1 1 80px;
+  height: 40px;
+  line-height: 40px;
+  background-color: grey;
+  text-align: center;
+  vertical-align: middle;
+}

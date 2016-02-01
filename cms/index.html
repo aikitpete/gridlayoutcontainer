@@ -1,0 +1,60 @@
+<link rel="stylesheet" href="style.css" type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.0-beta.1/jquery-ui.js"></script>
+<script src="script.js"></script>
+
+<div class="items">
+  <div id="grid-menu" class="item">Grid</div>
+  <div id="heading-menu" class="item">Heading</div>
+  <div id="image-menu" class="item">Image</div>
+  <div id="contact-menu" class="item">Contact Form</div>
+  <div id="newsletter-menu" class="item">Newsletter</div>
+  <div id="textfield-menu" class="item">Text</div>
+  <a href="javascript:void(0);" id="save-btn">Save</a>
+  <a href="javascript:void(0);" id="cleanup-btn">Clean Up</a>
+</div>
+
+<div id="preview-container"></div>
+
+<div style="display:none">
+  <h1 contenteditable="true" id="heading" style="cursor: text;display: inline-block;z-index: 10000" onclick="focus();">Insert heading...</h1>
+  <img id="image" src="http://lorempixel.com/200/200/fashion?x=0" style="width:100%;height:100%;background-size:cover">
+  <form id="contact" action="/my-handling-form-page" method="post">
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" />
+    </div>
+    <div>
+      <label for="mail">E-mail:</label>
+      <input type="email" id="mail" />
+    </div>
+    <div>
+      <label for="msg">Message:</label>
+      <textarea id="msg"></textarea>
+    </div>
+    <div class="button">
+      <button type="submit">Send</button>
+    </div>
+  </form>
+  <div id="newsletter">
+    <form id="contact" action="/my-handling-form-page" method="post">
+      <div>
+        <label for="mail">E-mail:</label>
+        <input type="email" id="mail" />
+      </div>
+    </form>
+    <div class="button">
+      <button type="submit">Subscribe</button>
+    </div>
+  </div>
+  <p id="textfield" contenteditable="true" style="cursor: text;display: inline-block;z-index: 10000" onclick="focus();">Insert your text...</p>
+  <div id="grid" class="sortable-grid connectedSortable">
+    <!--<div>
+    <div class="sortable-row connectedSortable">
+      <div class="sortable-cell">
+        <p contenteditable="true">Item 1</p>
+      </div>
+    </div>
+  </div>-->
+  </div>
+</div>

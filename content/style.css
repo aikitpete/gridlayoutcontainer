@@ -1,0 +1,59 @@
+body,
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.sortable-grid {
+  display: flex;
+  flex-direction: column;
+  /*border: dotted 1px grey;*/
+  min-height:5px;
+}
+
+.sortable-grid>div {
+  /*z-index:10000;*/
+  /*padding: 3px 0px !important;*/
+  /*height:100px !important;*/
+  /*flex-grow: 1;*/
+  /*flex-basis: 80px;*/
+}
+
+.sortable-grid>div>div {
+  display: flex;
+  height: 100%;
+}
+
+.sortable-grid>div>div>div {
+  /*border: dotted 1px grey;*/
+  flex-grow: 1;
+  flex-basis: 80px;
+}
+
+.sortable-grid div {
+  cursor: move;
+  /*background-color:white;*/
+}
+
+.sortable-grid #highlight {
+  flex: 0 0 5px !important;
+  background-color: blue;
+}
+
+.item {
+  z-index: 9998; /* for draggable */
+  cursor: move;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  flex: 1 1 80px;
+  height: 40px;
+  line-height: 40px;
+  background-color: grey;
+  text-align: center;
+  vertical-align: middle;
+}
